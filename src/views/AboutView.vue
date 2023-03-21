@@ -1,15 +1,11 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <h1>About</h1>
+  <p>
+    <a href="https://railstutorial.jp/">Ruby on Rails Tutorial</a>
+    is a <a href="https://railstutorial.jp/#ebook">book</a> and
+    <a href="https://railstutorial.jp/#screencast">screencast</a>
+    to teach web development with
+    <a href="http://rubyonrails.org/">Ruby on Rails</a>.
+    This is the sample application for the tutorial.
+  </p>
 </template>
-
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>
