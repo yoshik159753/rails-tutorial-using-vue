@@ -1,9 +1,16 @@
 <template>
-  <router-view />
+  <ApplicationLayout>
+    <router-view />
+  </ApplicationLayout>
 </template>
 
 <script>
+import ApplicationLayout from './components/layouts/ApplicationLayout.vue';
+
 export default {
+  components: {
+    ApplicationLayout
+  },
   mounted() {
     this.setTitle(this.$route.meta.title);
   },

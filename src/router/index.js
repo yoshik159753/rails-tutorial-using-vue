@@ -3,6 +3,7 @@ import HomeView from '@/views/HomeView.vue'
 import AboutView from '@/views/AboutView.vue'
 import HelpView from '@/views/HelpView.vue'
 import ContactView from '@/views/ContactView.vue'
+import NewUser from '@/views/users/NewUser.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -30,6 +31,12 @@ const router = createRouter({
       name: 'contact',
       component: ContactView,
       meta: { title: 'Contact' }
+    },
+    {
+      path: '/signup',
+      name: 'Signup',
+      component: NewUser,
+      meta: { title: 'Sign up' }
     }
   ]
 })
